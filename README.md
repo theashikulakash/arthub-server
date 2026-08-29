@@ -7,10 +7,12 @@ ArtHub — Online Art Marketplace (Express + MongoDB backend)
 This is the REST API powering ArtHub, a marketplace connecting artists with buyers.
 It handles authentication (JWT + social login upsert), role-based access (user / artist / admin),
 artwork CRUD, comments (purchase-gated), Stripe payments for artwork purchases and subscription
-tiers, and platform-wide analytics for the admin dashboard.
+tiers, and platform-wide analytics for the admin dashboard. 
+**Supporting ArtHub Full Stack Project
 
 ## Live URL
-- API Base: `[Your deployed backend URL, e.g. https://arthub-server.onrender.com]`
+- API Base: `[https://arthubserver.vercel.app]`
+- Frontend Live Link: `[https://arthub-a10.vercel.app]`
 
 ## Key Features
 - JWT authentication (email/password) + social login upsert endpoint for BetterAuth/Google
