@@ -31,4 +31,16 @@ const seedAdmin = async () => {
   return created;
 };
 
+if (require.main === module) {
+  const connectDB = require('../config/db');
+
+  connectDB()
+    .then(() => seedAdmin())
+    .then(() => process.exit(0))
+    .catch((err) => {
+      console.error(err);
+      process.exit(1);
+    });
+}
+
 module.exports = { seedAdmin };
